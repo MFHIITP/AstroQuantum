@@ -4,33 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        :root {
+            --background-light: #f5f5f5;
+            --background-dark: #333;
+            --text-light: #333;
+            --text-dark: #fff;
+            --box-shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            background-color: var(--background-light);
+            color: var(--text-light);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px var(--box-shadow);
+            border-radius: 10px; /* Increased border-radius for a softer look */
+            transition: background-color 0.5s, box-shadow 0.5s;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px; /* Rounded corners for the image */
+            box-shadow: 0 0 10px var(--box-shadow);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 20px; /* Increased margin for better spacing */
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: var(--background-dark);
+            color: var(--text-dark);
+        }
+
+        body.dark-mode .container,
+        body.dark-mode img {
+            box-shadow: 0 0 10px var(--box-shadow);
+            background-color: #333;
+        }
+
+        /* Dark Mode Button Styling */
+        #darkModeButton {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #darkModeButton:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
+    <!-- Dark Mode Toggle Button -->
+    <button id="darkModeButton" onclick="toggleDarkMode()">Dark Mode</button>
+
     <div class="container">
-        Three million years of intelligent human life on our planet Earth, and we haven't been able 
-        to escape out from the threshold of our Solar System, and our entire home of our universe 
-        in the vast multiverse is still completely beyond our imagination. Many misconceptions, and 
-        mysteries still prevail, and we perhaps have mysteries or unknown ideas of nearly nothing 
-        about our own solar system. Perhaps we are not even able to imagine several ideas that can 
-        lead to new mysteries and curiosities, and this inability has led to us knowing about nothing 
-        about the solar system we can see, leaving alone the universe completely.
-        The universe is very vast. Distances like the diameter of the solar system (till sun's magnetic 
-        field becomes zero) come in the limit tending to zero when compared to the entire universe.
-        We, an extended family of humans, matters nothing to the universe we live in. We are too 
-        insignificant, too illiterate with respect to the universe. We know nothing about even the 
-        solar system. Yet, we are improving. We are slowly, but surely, being more and more 
-        knowledgeable. Maybe we can never come in the significant ratio, but our understanding of 
-        our home is increasing. Physics has made a huge advent in our understanding of the 
-        universe, and we can say that we are starting to know the truth, because by now, we have 
-        realized that we humans, once when we called ourselves the knowers of everything, during 
-        the time of classical physics, now have understood with quantum physics that we do not 
-        know anything about how the universe works, this understanding that we are nothing form 
-        something has made us something from nothing, and we move together to explore the 
-        universe.
+        
+        <p><b>Three million years</b> of intelligent human life on our planet Earth, and we haven't been able 
+            to escape out from the threshold of our Solar System, and our entire home of our universe 
+            in the vast multiverse is still completely beyond our imagination. Many misconceptions, and 
+            mysteries still prevail, and we perhaps have mysteries or unknown ideas of nearly nothing 
+            about our own solar system. Perhaps we are not even able to imagine several ideas that can 
+            lead to new mysteries and curiosities, and this inability has led to us knowing about nothing 
+            about the solar system we can see, leaving alone the universe completely.
+            The universe is very vast. Distances like the diameter of the solar system (till sun's magnetic 
+            field becomes zero) come in the limit tending to zero when compared to the entire universe.
+            We, an extended family of humans, matters nothing to the universe we live in. We are too 
+            insignificant, too illiterate with respect to the universe. We know nothing about even the 
+            solar system. Yet, we are improving. We are slowly, but surely, being more and more 
+            knowledgeable. Maybe we can never come in the significant ratio, but our understanding of 
+            our home is increasing. Physics has made a huge advent in our understanding of the 
+            universe, and we can say that we are starting to know the truth, because by now, we have 
+            realized that we humans, once when we called ourselves the knowers of everything, during 
+            the time of classical physics, now have understood with quantum physics that we do not 
+            know anything about how the universe works, this understanding that we are nothing form 
+            something has made us something from nothing, and we move together to explore the 
+            universe.</p>
+       
         <br>
-        <img src="../images/350px-PaleBlueDot.jpg" height="250px" width="250px">
+        <img src="../images/350px-PaleBlueDot.jpg" height="250px" width="250px" alt="Pale Blue Dot">
         <br>
-            The image shows our planet Earth from the voyager when it is about to leave the solar 
+        <p> The image shows our planet Earth from the voyager when it is about to leave the solar 
             system's magnetic field boundary and move out to the interstellar space. This is where the 
             solar system, by very general term, ends. This is where all the human population lives 
             together. For centuries and even now for all world leaders, they individually behave like 
@@ -61,6 +143,23 @@
             new life, all the life forms live together, most of them united. We all live together in this 
             little, insignificant world, the tiny dot in the picture, struggling to survive, to gather 
             knowledge, and ending the life cycle in the end. It is a small world, after all.
+</p>
     </div>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            const button = document.getElementById('darkModeButton');
+
+            body.classList.toggle('dark-mode');
+
+            // Update button text based on the current mode
+            if (body.classList.contains('dark-mode')) {
+                button.textContent = 'Light Mode';
+            } else {
+                button.textContent = 'Dark Mode';
+            }
+        }
+    </script>
 </body>
 </html>
