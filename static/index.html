@@ -72,8 +72,7 @@
 
       <div class="container">
         Quotes on Astronomy <br>
-        <button type="button" class="btn btn-secondary btn-sm" id="buton" onclick="action()">Read More</button>
-        <div class="contained" id="contain" style="display: none">
+        <div class="contained" id="contain" style="display: none; margin:4px;">
             Astronomy, as nothing else can do, teaches man hummility<br>
                   -- Arthur C. Clerk<br>
           For small creatures such as us, the vastness in only berable through Love<br>
@@ -87,6 +86,7 @@
           Gravity explains the motion of planets but it cannot explain who sets the planets in motion <br>
                   -- Sir Issac Newton <br>
         </div>
+        <button type="button" class="btn btn-secondary btn-sm" id="buton" onclick="action()">Read More</button>
       </div>
       <div class="message">
         <h2 style="text-align: center;">About Us</h2>
@@ -104,9 +104,11 @@
           const contain = document.getElementById("contain");
           if(contain.style.display != "none"){
             contain.style.display = "none";
+            buton.innerHTML = "Read More"
           }
           else{
             contain.style.display = "block";
+            buton.innerHTML = "Show Less"
           }
         }
 
