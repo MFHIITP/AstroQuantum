@@ -5,7 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction</title>
 </head>
+<style>
+    #btn{
+        width:90px;
+        height:30px;
+        background-color: rgb(4, 44, 44);
+        color:wheat;
+        border-radius: 12px;
+        cursor:pointer;
+    }
+    #btn:hover{
+        background-color: wheat;
+        color:rgb(4, 44, 44);
+    }
+</style>
 <body>
+    <button id="btn" onclick="dark()">Dark Mode</button>
     <div class="container">
         Three million years of intelligent human life on our planet Earth, and we haven't been able 
         to escape out from the threshold of our Solar System, and our entire home of our universe 
@@ -62,5 +77,21 @@
             little, insignificant world, the tiny dot in the picture, struggling to survive, to gather 
             knowledge, and ending the life cycle in the end. It is a small world, after all.
     </div>
+    <script>
+        function dark(){
+            const buton = document.getElementById("btn");
+            const body = document.body;
+            if(buton.innerHTML == "Dark Mode"){
+                body.style.backgroundColor = "grey";
+                body.style.color = "white";
+                buton.innerHTML = "Light Mode";
+            }
+            else{
+                body.style.backgroundColor = "white";
+                body.style.color = "black";
+                buton.innerHTML = "Dark Mode";
+            }
+        }
+    </script>
 </body>
 </html>
