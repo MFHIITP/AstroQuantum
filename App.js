@@ -6,7 +6,7 @@ const port = process.env.PORT || 5500;
 app.set("/Astro_folder");
 app.set("view-engine", "html");
 app.use("/static", express.static("static"));
-app.use("/images", express.static("static"));
+app.use("/images", express.static("images"));
 
 app.use(express.urlencoded());
 
