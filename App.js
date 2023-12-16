@@ -103,5 +103,5 @@ app.post("/backend.js", async(req,res)=>{
     }
 
     output(data, res);
-})
+});
 
