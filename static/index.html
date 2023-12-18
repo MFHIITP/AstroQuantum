@@ -23,7 +23,7 @@
         margin:12px auto;
         padding:6px;
         border-radius: 12px;
-        overflow: scroll;
+        overflow-y: scroll;
     }
   .events{
             border:2px solid green;
@@ -32,10 +32,10 @@
             margin:12px auto;
             padding:6px;
             border-radius: 12px;
-            overflow: scroll;
+            overflow-y: scroll;
   }
   .founders{
-            border:2px solid green;
+            /* border:2px solid green; */
             height:300px;
             width:40%;
             margin:12px auto;
@@ -71,6 +71,10 @@
   .btn, .container{
     margin-top: 12px;
   } 
+  .founders>p{
+    margin-left:30%;
+  }
+  
 
   .full-wh {
             position: absolute;
@@ -216,9 +220,11 @@
                 transform: translateY(-2000px);
             }
         }
+        .contain{
+          height:0.2vh;
+        }
 </style>
 <body>
-
     <div class="bg-animation">
         <div id="stars"></div>
         <div id="stars2"></div>
@@ -227,7 +233,7 @@
     </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbars">
       <div class="container" style="display:inline-block; width:300px;">
-        <a href="#"><img src="../images/astrophysics-icon-monochrome-simple-science-icon-for-templates-web-design-and-infographics-2J9RJHM.jpg" alt="" width="40px" height="40px"></a>
+        <a href="#"><img src="../images/WhatsApp Image 2023-12-16 at 22.54.13.jpeg" alt="" width="40px" height="40px"></a>
         <p style="color:black;">AstroQuantum Club</p>
       </div>
         <div class="container-fluid">
@@ -241,7 +247,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="../static/Reference_page.html">References</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -258,10 +264,10 @@
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <!-- <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form> -->
           </div>
         </div>
       </nav>
@@ -307,41 +313,64 @@
             <br>
             The Only JU Club dedicated to AstroPhysics-Geology/Quantum Physics/Cosmic Sciences.</p>
     </div>
-    <div class="events" style="overflow:scroll;">
+    <div class="events" style="overflow-y:scroll;">
         <h2 style="text-align: center;">Events</h2>
+        <p>Date: 16/12/2026</p>
+        <img src="../images/WhatsApp Image 2023-12-11 at 15.22.47.jpeg" alt="" height="350px" width="300px">
     </div>
     <div class="name" style="margin:14px; padding:4px;">
       <h1 style="text-align: center; justify-content: center; color:white;">Founders and Organizers</h1>
     </div>
     <div class="founders">
-      Professor Dr. Rohini Basak <br>
-      Department of Information Technology, Jadavpur University
+      <p>Professor Dr. Rohini Basak <br>
+      Department of Information Technology, Jadavpur University</p>
     </div>
     <div class="founders">
-      Professor Dr. Farook Rahaman <br>
-      Department of Mathematics, Jadavpur University
+      <img src="../images/WhatsApp Image 2023-12-16 at 23.28.18.jpeg" alt="" height="230px" width="230px" style=" margin-left:30%;">
+      <br>
+      <p>Professor Dr. Farook Rahaman <br>
+      Department of Mathematics, Jadavpur University</p>
     </div>
     <div class="founders">
-      Shubhayan Ghosal <br>
-      Mathematics Department
+      <img src="../images/WhatsApp Image 2023-12-16 at 23.01.57.jpeg" alt="" height="230px" width="230px" style=" margin-left:30%;">
+      <br>
+      <p style="margin-left: 30%;">Shubhayan Ghosal <br>
+      Mathematics Department</p>
     </div>
     <div class="founders">
-      Md. Farshid Hossain <br>
-      Information Technology Department
+      <img src="../images/WhatsApp Image 2023-12-16 at 23.25.32.jpeg" alt="" height="230px" width="230px" style=" margin-left:30%;">
+      <br>
+      <p>Md. Farshid Hossain <br>
+      Information Technology Department</p>
     </div>
     <div class="founders">
-      Shinjan <br>
-      Computer Science Department
+      <img src="../images/WhatsApp Image 2023-12-16 at 23.26.46.jpeg" alt="" height="230px" width="230px" style=" margin-left:30%;">
+      <br>
+      <p>Shinjan Roy<br>
+      Computer Science Department</p>
     </div>
     <div class="founders">
-      Tamal <br>
-      Physics Department
+      <img src="../images/WhatsApp Image 2023-12-16 at 23.09.30.jpeg" alt="" height="230px" width="230px" style=" margin-left:30%;">
+      <br>
+      <p>Tamal Panda<br>
+      Physics Department</p>
     </div>
     <div class="footer">
       Contact Us At <br>
-      <img src="../images/88a9d0c252977e827f7f3862e8de6714.jpg" alt="" height="20px" width="20px" style="margin-right: 4px">Farshid: <a style="color:aquamarine; margin-left: 2px; text-decoration: none;", href="tel:8420019028">8420019028</a>
+      <img src="../images/88a9d0c252977e827f7f3862e8de6714.jpg" alt="" height="20px" width="20px" style="margin-right: 4px">Farshid: 
+      <a href="tel:8420019028" style="color:aquamarine; margin-left: 2px; text-decoration: none; position:relative;">8420019028</a>
+      Email Us at:
+      <a href="mailto:hossainfarshid@gmail.com" style="color:aquamarine; margin-left: 2px; text-decoration: none; position:relative;" >hossainfarshid@gmail.com</a>
       <br>
-      <img src="../images/88a9d0c252977e827f7f3862e8de6714.jpg" alt="" height="20px" width="20px" style="margin-right: 4px">Shubhayan: 
+      <img src="../images/88a9d0c252977e827f7f3862e8de6714.jpg" alt="" height="20px" width="20px" style="margin-right: 4px">Shubhayan:
+      <a href="tel:9903297707" style="color:aquamarine; margin-left: 2px; text-decoration: none; position:relative;">9903297707</a> 
+      <br>
+      <img src="../images/88a9d0c252977e827f7f3862e8de6714.jpg" alt="" height="20px" width="20px" style="margin-right: 4px">Tamal:
+      <a href="tel:7679105899" style="color:aquamarine; margin-left: 2px; text-decoration: none; position:relative;">7679105899</a> 
+      <br>
+      <img src="../images/88a9d0c252977e827f7f3862e8de6714.jpg" alt="" height="20px" width="20px" style="margin-right: 4px">Shinjan:
+      <a href="tel:6289997084" style="color:aquamarine; margin-left: 2px; text-decoration: none; position:relative;">6289997084</a> 
+      <br>
     </div>
 
 
@@ -357,7 +386,7 @@
           }
           else{
             contain.style.display = "block";
-            buton.innerHTML = "Show Less"
+            buton.innerHTML = "Show Less";
           }
         }
 
