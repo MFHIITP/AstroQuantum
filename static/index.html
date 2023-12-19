@@ -36,7 +36,7 @@
   }
   .founders{
             /* border:2px solid green; */
-            height:300px;
+            height:400px;
             width:40%;
             margin:12px auto;
             padding:6px;
@@ -45,9 +45,9 @@
   }
   .footer{
     color:wheat;
-    border:2px solid green;
+    /* border:2px solid green; */
     height:200px;
-    width:40%;
+    width:45%;
     margin:12px auto;
     padding:6px;
     border-radius: 12px;
@@ -73,6 +73,15 @@
   } 
   .founders>p{
     margin-left:30%;
+  }
+  .founders>p {
+    margin-top: 0;
+    width: 190px;
+    margin-bottom: 1rem;
+}
+  .name{
+    margin: 14px;
+    padding:4px;
   }
   
 
@@ -223,6 +232,56 @@
         .contain{
           height:0.2vh;
         }
+        @media only screen and (max-width: 1200px){
+          .navbars{
+            position:sticky;
+            top:-20px;
+            height:75px;
+            margin:0px;
+          }
+          .navbar-brand{
+            display:none;
+          }
+          .container-fluid{
+            color:white;
+            z-index: 0.5;
+          }
+          .navbar-toggler{
+            position:absolute;
+            top:100px;
+            right:18px;
+            z-index: 2;
+          }
+          #navbarSupportedContent{
+            background-color:lightseagreen;
+            font-size: xx-large;
+            opacity:0.85;
+            
+          }
+          .dropdown-menu{
+            background-color: lightseagreen;
+          }
+          .collapse{
+            border-radius: 12px;
+          }
+          .founders{
+            margin-left:15%;
+            height:450px;
+          }
+          .footer{
+            width:100%;
+            margin-left: 10%;
+            margin-top: 65px;
+          }
+          .name{
+            margin-left: 30px;
+          }
+        }
+        @media only screen and(max-width:1000px){
+          .name{
+            margin-left:10px;
+          }
+        }
 </style>
 <body>
     <div class="bg-animation">
@@ -233,7 +292,7 @@
     </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbars">
       <div class="container" style="display:inline-block; width:300px;">
-        <a href="#"><img src="../images/WhatsApp Image 2023-12-16 at 22.54.13.jpeg" alt="" width="40px" height="40px"></a>
+        <a href="#"><img src="../images/WhatsApp Image 2023-12-16 at 22.54.13.jpeg" alt="" width="30px" height="30px" style="position:relative; top:4px;"></a>
         <p style="color:black;">AstroQuantum Club</p>
       </div>
         <div class="container-fluid">
@@ -318,10 +377,12 @@
         <p>Date: 16/12/2026</p>
         <img src="../images/WhatsApp Image 2023-12-11 at 15.22.47.jpeg" alt="" height="350px" width="300px">
     </div>
-    <div class="name" style="margin:14px; padding:4px;">
+    <div class="name">
       <h1 style="text-align: center; justify-content: center; color:white;">Founders and Organizers</h1>
     </div>
     <div class="founders">
+      <img src="../images/WhatsApp Image 2023-12-18 at 14.41.28.jpeg" alt="" height="230px" width="230px" style=" margin-left:30%;">
+      <br>
       <p>Professor Dr. Rohini Basak <br>
       Department of Information Technology, Jadavpur University</p>
     </div>
@@ -359,6 +420,7 @@
       Contact Us At <br>
       <img src="../images/88a9d0c252977e827f7f3862e8de6714.jpg" alt="" height="20px" width="20px" style="margin-right: 4px">Farshid: 
       <a href="tel:8420019028" style="color:aquamarine; margin-left: 2px; text-decoration: none; position:relative;">8420019028</a>
+      <br>
       Email Us at:
       <a href="mailto:hossainfarshid@gmail.com" style="color:aquamarine; margin-left: 2px; text-decoration: none; position:relative;" >hossainfarshid@gmail.com</a>
       <br>
@@ -371,6 +433,9 @@
       <img src="../images/88a9d0c252977e827f7f3862e8de6714.jpg" alt="" height="20px" width="20px" style="margin-right: 4px">Shinjan:
       <a href="tel:6289997084" style="color:aquamarine; margin-left: 2px; text-decoration: none; position:relative;">6289997084</a> 
       <br>
+    </div>
+    <div class="contain1">
+        <p style="margin-left: 2px;">created by: Md. Farshid Hossain</p>
     </div>
 
 
