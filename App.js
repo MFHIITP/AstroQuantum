@@ -49,7 +49,8 @@ const Collection1 = mongoose.model("collection_1", Schema);
 app.post("/backend_hello", async (req, res)=>{
     var data = new Collection1(req.body);
     data.save().then(()=>{
-        res.status(200).send("Your data has been updated to the database. Please exit the website");
+        res.status(200).sendFile(__dirname + "/Log_In_Form.html");
+        // res.send("The data has been saved. Please exit the website.")
     }).catch(()=>{
         res.send("OOPs, The data has not been saved. Please try again");
     });
